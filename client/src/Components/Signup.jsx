@@ -24,7 +24,7 @@ const nav=useNavigate();
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/user/register', { name, email, password, age, mobile });
+      const response = await axios.post('https://hotelapp-zatj.onrender.com/user/register', { name, email, password, age, mobile });
       // Handle successful registration (e.g., redirect to login, show success message)
       console.log('Registration successful:', response.data);
       alert('Registration Successfull !!')

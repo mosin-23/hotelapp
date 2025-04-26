@@ -49,7 +49,7 @@ const BookingForm = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/bookings/', bookingData);
+      const response = await axios.post('https://hotelapp-zatj.onrender.com/bookings/', bookingData);
       alert('Booking successful!');
       console.log('Booking response:', response.data);
     } catch (error) {

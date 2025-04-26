@@ -18,7 +18,7 @@ function SearchAndResults() {
   useEffect(() => {
     const fetchAllAccommodations = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/hotels');
+        const response = await axios.get('https://hotelapp-zatj.onrender.com/hotels');
         setAllAccommodations(response.data);
         setSearchResults(response.data); // Initially show all hotels
         setInitialLoading(false);
@@ -58,7 +58,7 @@ function SearchAndResults() {
     setLoading(true);
     try {
       // 1. Fetch hotels based on the city
-      const cityResponse = await axios.get(`http://localhost:5000/hotels/city/${searchTerm}`);
+      const cityResponse = await axios.get(`https://hotelapp-zatj.onrender.com/hotels/city/${searchTerm}`);
       let cityHotels = cityResponse.data.hotels;
 
       // 2. Filter the city-specific hotels based on the selected dates

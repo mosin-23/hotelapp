@@ -9,7 +9,7 @@ export default function MyBookings() {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/bookings/user/${userId}`);
+        const response = await axios.get(`https://hotelapp-zatj.onrender.com/bookings/user/${userId}`);
         setBookings(response.data);
       } catch (error) {
         console.error('Error fetching bookings:', error);

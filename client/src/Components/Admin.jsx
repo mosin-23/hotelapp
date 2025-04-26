@@ -75,7 +75,7 @@ export default function AdminDashboard() {
         images: formData.images.split(',').map(img => img.trim())
       };
       
-      await axios.post('http://localhost:5000/hotels/create', payload);
+      await axios.post('https://hotelapp-zatj.onrender.com/hotels/create', payload);
       
       toast.success('Hotel added successfully!');
       setFormData({

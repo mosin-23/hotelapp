@@ -25,7 +25,7 @@ function Hotel() {
       setLoading(true);
       setError(null);
       try {
-        const response = await axios.get(`http://localhost:5000/hotels/${accommodationId}`);
+        const response = await axios.get(`https://hotelapp-zatj.onrender.com/hotels/${accommodationId}`);
         setAccommodation(response.data);
         setLoading(false);
       } catch (err) {

@@ -19,6 +19,7 @@ const Cancellation = lazy(() => import('./Components/Cancellation'));
 const Destination = lazy(() => import('./Components/Destination'));
 const ContactUs = lazy(() => import('./Components/ContactUs'));
 const AdminDashboard = lazy(() => import('./Components/Admin'));
+const Exp=lazy(()=>import('./Components/Experience'));
 
 const Loader = () => (
   <div className="flex justify-center items-center h-screen">
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/how-it-works" element={<About />} />
           <Route path="/cancellation" element={<Cancellation />} />
+          <Route path="/experiences" element={<Exp/>}/>
           <Route path="/destinations" element={<Destination />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route
